@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="sinfondo.png">
+  <title>Ruleta</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <!-- Contenido del navbar en el header -->
+      <ul>
+        <img src="sinfondo.png" alt="Logo" class="navbar-logo">
+      </ul>
+    </nav>
+  </header>
+
+  <!--<div class="banner-left">
+	<img src="img.jpg" alt="Imagen en el centro" class="center-image">
+  </div>-->
+<div class="main-content">
+  <div class="roulette-container">
+    <div class="roulette">
+      <div class="wheel">
+        <div class="sector" data-sector="2x1">2x1</div>
+        <div class="sector" data-sector="40%">40%</div>
+        <div class="sector" data-sector="30%">30%</div>
+        <div class="sector" data-sector="50% 2da Unidad">
+          <h2>50%</h2>
+          <p> 2da</p>
+        </div>
+        <div class="sector" data-sector="50%">50%</div>
+        <div class="sector" data-sector="20%">20%</div>
+        <div class="sector" data-sector="25% 2da Unidad">
+          <h2>25%</h2>
+          <p> 2da</p>
+        </div>
+        <div class="sector" data-sector="45%">45%</div>
+        <div class="sector" data-sector="35% 2da Unidad">      
+          <h2>35%</h2>
+          <p> 2da</p>
+        </div>
+        <div class="sector" data-sector="22%">22%</div>
+        <div class="sector" data-sector="42%">42%</div>
+        <div class="sector" data-sector="48%">48%</div>
+      </div>
+      <div class="center-image-container">
+        <img src="sinfondo.png" alt="Imagen en el centro" class="center-image">
+      </div>
+      <div class="pin"></div>
+    </div>
+  </div>
+</div>
+  <!--<div class="banner-right">
+    <img src="img.jpg" alt="Imagen en el centro" class="center-image">
+  </div>-->
+  <footer>
+    <nav class="navbar">
+      <!-- Contenido del navbar en el footer -->
+      <ul>
+        <li>
+        <a>Siguenos en Instagram</a>
+        <a href="https://instagram.com/acc.esoriosaura?igshid=MzRlODBiNWFlZA==" title="Accesorios Aura"><img src="insta.png" alt="Logos" class="navbar-logo2"></a>
+      </li>
+      </ul>
+    </nav>
+  </footer>
+
+    <div class="button-container">
+    	<button onclick="spin()">Girar</button>
+    </div>
+<div class="result-container" id="resultContainer"></div>
+  <script src="script.js"></script>
+</body>
+</html>
+

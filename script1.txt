@@ -1,0 +1,24 @@
+const wheel = document.querySelector('.wheel');
+const pin = document.querySelector('.pin');
+const button = document.querySelector('button');
+
+let deg = 0;
+let spinning = false;
+
+const spin = () => {
+  if (!spinning) {
+    spinning = true;
+    deg = 1000 + Math.floor(Math.random() * 1000); // Ajusta el número para controlar la duración del giro
+    wheel.style.transition = 'all 3s ease-out'; // Ajusta la duración del giro aquí también
+    wheel.style.transform = `rotate(${deg}deg)`;
+
+    setTimeout(() => {
+      spinning = false;
+      wheel.style.transition = 'none';
+      const actualDeg = deg % 360;
+      wheel.style.transform = `rotate(${actualDeg}deg)`;
+    }, 3000); // Ajusta el tiempo aquí para determinar cuánto tiempo tarda en detenerse (debe ser igual o mayor que la duración de transición)
+  }
+};
+
+button.addEventListener('click', spin);
