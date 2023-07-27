@@ -234,6 +234,7 @@ header .navbar {
   /*background-color: #333;*/
   color: #fff;
   padding: 20px 30px;
+  font-size: 30px;
 }
 
 header .navbar ul {
@@ -256,7 +257,7 @@ header .navbar li:last-child {
 header .navbar a {
   text-decoration: none;
   color: #fff;
-  font-size: 40px;
+  font-size: 20px;
 }
 
 header .navbar-logo {
@@ -265,11 +266,14 @@ header .navbar-logo {
   margin-right: 20px; /* Espacio entre la imagen y los elementos de navegación */
 }
 
-footer .navbar-logo2 {
+header .navbar-logo2{
   width: 40px; /* Ajusta el ancho de la imagen según tu diseño */
   height: 40px; /* Mantiene la proporción de la imagen */
   margin-right: 20px; /* Espacio entre la imagen y los elementos de navegación */
+  font-size: 30px;
 }
+
+
 /* Estilos para el navbar en el footer */
 footer {
   position: fixed;
